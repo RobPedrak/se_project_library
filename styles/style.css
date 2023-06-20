@@ -46,6 +46,10 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__title {
   font-size: 66px;
   line-height: 76px;
@@ -82,6 +86,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -157,6 +165,10 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -249,7 +261,7 @@
   color: #fff;
 }
 
-.staff__list {
+.staff__picks {
   max-width: 760px;
   padding-left: 0;
   gap: 40px;
@@ -393,19 +405,17 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: #fff;
   padding: 60px 102px 60px 80px;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .footer__columns {
   display: flex;
-  justify-content: flex-end;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
@@ -413,6 +423,7 @@
 }
 
 .footer__logo {
+  /* Practicum Logo instead of Triple Peaks using Triple Peaks dimensions */
   max-width: 57px;
   max-height: 80px;
 }
@@ -435,6 +446,8 @@
 
 .footer__column-heading {
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__column-link {
@@ -444,7 +457,7 @@
   text-decoration: none;
 }
 
-.footer__column-link :hover {
+.footer__column-link:hover {
   color: #c1c1c1;
 }
 
