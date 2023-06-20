@@ -427,8 +427,8 @@ html[lang="en"] {
 
 .footer__logo {
   /* Practicum Logo instead of Triple Peaks, Dimensions acquired from Discord */
-  max-width: 116px;
-  max-height: 21px;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
