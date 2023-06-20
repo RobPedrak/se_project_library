@@ -251,12 +251,12 @@
 
 .staff__list {
   max-width: 760px;
-  margin-top: 68px;
   padding-left: 0;
+  gap: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+  margin: 68px auto 0;
+  /* justify-content: center; not working, temp. margin property */
 }
 
 .card {
@@ -349,6 +349,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
 }
 
 .about__title {
@@ -366,9 +368,8 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  position: absolute;
-  top: 0;
-  left: 120px;
+  margin-left: 120px;
+  margin-top: -20px;
   z-index: 1;
 }
 
@@ -392,18 +393,28 @@
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  color: #fff;
+  padding: 60px 102px 60px 80px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer__column_content_hours {
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  max-width: 57px;
+  max-height: 80px;
 }
 
 .footer__list {
@@ -414,9 +425,16 @@
 }
 
 .footer__list-item {
+  margin-top: 16px;
+}
+
+.footer__list-item ol li:last-child,
+.footer__list-item menu li:last-child {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
@@ -426,8 +444,15 @@
   text-decoration: none;
 }
 
+.footer__column-link :hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
 }
 
 .footer__copyright {
+  margin-top: 108px;
 }
