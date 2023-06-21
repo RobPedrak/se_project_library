@@ -1,10 +1,7 @@
-html[lang="en"] {
-}
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 2em auto;
+  margin: 0 auto;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -24,7 +21,6 @@ html[lang="en"] {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav__logo {
@@ -33,10 +29,9 @@ html[lang="en"] {
 }
 
 .nav__links {
-  margin: 8px 0 0;
-  font-size: 8px;
+  margin: 8px 0 0 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 20px;
   flex-direction: row;
   list-style-type: none;
@@ -65,7 +60,7 @@ html[lang="en"] {
 .header__description {
   font-size: 20px;
   line-height: 30px;
-  margin-top: 0;
+  margin: 0 0 0 0;
   max-width: 532px;
 }
 
@@ -271,7 +266,6 @@ html[lang="en"] {
   display: flex;
   flex-wrap: wrap;
   margin: 68px auto 0;
-  /* justify-content: center; not working, temp. margin property */
 }
 
 .card {
@@ -383,16 +377,15 @@ html[lang="en"] {
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  margin-left: 120px;
-  margin-top: -20px;
+  margin: 0 0 0 120px;
   z-index: 1;
 }
 
 .about__paragraph {
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
-.about__paragraph p:last-child {
+.about__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -439,16 +432,15 @@ html[lang="en"] {
 }
 
 .footer__list-item {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.footer__list-item ol li:last-child,
-.footer__list-item menu li:last-child {
+.footer__list-item:last-child {
   margin-bottom: 0;
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-size: 16px;
   line-height: 20px;
 }
@@ -458,6 +450,8 @@ html[lang="en"] {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -467,8 +461,9 @@ html[lang="en"] {
 .footer__social-icon {
   height: 16px;
   width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
-  margin-top: 108px;
+  margin: 108px 0 0 0;
 }
